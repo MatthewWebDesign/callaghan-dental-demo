@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Callaghan Dental | Mt Eden, Auckland</title>
+<style>
+  :root {
+    --green: #1f5f4a;
+    --green-light: #e8f2ee;
+    --accent: #f2a541;
+    --text: #1d2a26;
+    --muted: #5b6b66;
+    --white: #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Segoe UI", system-ui, -apple-system, sans-serif; color: var(--text); line-height: 1.6; background: var(--white); }
+  a { color: var(--green); }
+  .demo-banner { background: var(--text); color: #fff; text-align: center; font-size: 0.85rem; padding: 6px 12px; }
+  header { display: flex; justify-content: space-between; align-items: center; padding: 18px 6vw; border-bottom: 1px solid #e3e9e7; }
+  .logo { font-weight: 700; font-size: 1.3rem; color: var(--green); }
+  .logo span { color: var(--accent); }
+  nav a { margin-left: 22px; text-decoration: none; color: var(--text); font-weight: 500; }
+  nav a:hover { color: var(--green); }
+  .hero { background: var(--green-light); padding: 80px 6vw; display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; }
+  .hero h1 { font-size: 2.6rem; line-height: 1.2; margin-bottom: 16px; }
+  .hero p { color: var(--muted); font-size: 1.1rem; margin-bottom: 26px; }
+  .btn { display: inline-block; background: var(--green); color: #fff; padding: 12px 26px; border-radius: 30px; text-decoration: none; font-weight: 600; }
+  .btn.alt { background: transparent; color: var(--green); border: 2px solid var(--green); margin-left: 10px; }
+  .hero-card { background: #fff; border-radius: 16px; padding: 28px; box-shadow: 0 10px 30px rgba(31,95,74,0.12); }
+  .hero-card h3 { margin-bottom: 12px; }
+  .hero-card li { list-style: none; padding: 6px 0; border-bottom: 1px dashed #dfe7e4; display: flex; justify-content: space-between; }
+  section { padding: 70px 6vw; }
+  section h2 { font-size: 2rem; margin-bottom: 10px; }
+  .sub { color: var(--muted); margin-bottom: 36px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 22px; }
+  .card { border: 1px solid #e3e9e7; border-radius: 14px; padding: 24px; }
+  .card h3 { margin-bottom: 6px; }
+  .price { color: var(--green); font-weight: 700; margin-top: 10px; }
+  .alt-bg { background: #fafcfb; }
+  details { border-bottom: 1px solid #e3e9e7; padding: 16px 0; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { color: var(--muted); margin-top: 8px; }
+  .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+  footer { background: var(--text); color: #c9d4d0; padding: 30px 6vw; font-size: 0.9rem; text-align: center; }
+  @media (max-width: 760px) {
+    .hero, .contact { grid-template-columns: 1fr; }
+    nav { display: none; }
+    .hero h1 { font-size: 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="demo-banner">Demo website: Callaghan Dental is a fictional business created to show an AI assistant.</div>
+
+<header>
+  <div class="logo">Callaghan <span>Dental</span></div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#hours">Hours</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>Dr Emma Callaghan and team: family dentistry in Mt Eden</h1>
+    <p>Check-ups, cleans, whitening and same-day emergency appointments. New patients welcome. Ask our assistant anything, any time, using the chat bubble in the corner.</p>
+    <a class="btn" href="#contact">Book an appointment</a>
+    <a class="btn alt" href="#services">View prices</a>
+  </div>
+  <div class="hero-card">
+    <h3>Opening hours</h3>
+    <ul>
+      <li><span>Mon – Thu</span><span>8:00am – 6:00pm</span></li>
+      <li><span>Friday</span><span>8:00am – 4:00pm</span></li>
+      <li><span>Saturday</span><span>9:00am – 1:00pm</span></li>
+      <li><span>Sunday & public holidays</span><span>Closed</span></li>
+    </ul>
+  </div>
+</div>
+
+<section id="services">
+  <h2>Services & prices</h2>
+  <p class="sub">Clear prices, no surprises. Final cost is confirmed at your appointment.</p>
+  <div class="grid">
+    <div class="card"><h3>Exam & X-rays</h3><p>Full check-up with two bitewing X-rays.</p><div class="price">$95</div></div>
+    <div class="card"><h3>Hygienist clean</h3><p>Scale, polish and personalised home-care advice.</p><div class="price">$140</div></div>
+    <div class="card"><h3>New patient package</h3><p>Exam, X-rays and clean in one 60-minute visit.</p><div class="price">$199</div></div>
+    <div class="card"><h3>Teeth whitening</h3><p>In-chair whitening plus take-home trays.</p><div class="price">from $490</div></div>
+    <div class="card"><h3>Fillings</h3><p>Tooth-coloured composite fillings.</p><div class="price">from $180</div></div>
+    <div class="card"><h3>Emergency visit</h3><p>Same-day appointment for pain or a broken tooth.</p><div class="price">$120 assessment</div></div>
+  </div>
+</section>
+
+<section id="hours" class="alt-bg">
+  <h2>Finding us</h2>
+  <p class="sub">12 Example Road, Mt Eden, Auckland (fictional address)</p>
+  <div class="grid">
+    <div class="card"><h3>Parking</h3><p>Free parking for patients behind the building, plus street parking nearby.</p></div>
+    <div class="card"><h3>Public transport</h3><p>5 minutes' walk from the Mt Eden train station and the Dominion Road buses.</p></div>
+    <div class="card"><h3>Accessibility</h3><p>Ground-floor clinic with wheelchair access and an accessible bathroom.</p></div>
+  </div>
+</section>
+
+<section id="faq">
+  <h2>Frequently asked questions</h2>
+  <p class="sub">Can't see your question? Ask our chat assistant.</p>
+  <details><summary>Do you take new patients?</summary><p>Yes. Our New Patient Package ($199) is the best way to start.</p></details>
+  <details><summary>Do you offer payment plans?</summary><p>Yes, for treatment over $500 we offer interest-free payment plans. Ask at reception.</p></details>
+  <details><summary>Do you see children?</summary><p>Yes. Under-18s are eligible for free basic dental care in NZ, and we are part of the Combined Dental Agreement.</p></details>
+  <details><summary>What if I need to cancel?</summary><p>Please give us at least 24 hours' notice. Late cancellations may incur a $40 fee.</p></details>
+</section>
+
+<section id="contact" class="alt-bg">
+  <h2>Book or get in touch</h2>
+  <div class="contact">
+    <div>
+      <p><strong>Phone:</strong> 09 000 0000 (demo)</p>
+      <p><strong>Email:</strong> hello@callaghandental.example</p>
+      <p><strong>Online booking:</strong> available 24/7 through our chat assistant or by phone during opening hours.</p>
+    </div>
+    <div class="card">
+      <h3>Dental emergency?</h3>
+      <p>Call us first thing. We hold same-day emergency slots every weekday. After hours, call Healthline on 0800 611 116 or go to your nearest emergency department if it's serious.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © Callaghan Dental (fictional demo business). AI assistant built by [Your business name].
+</footer>
+
+<!--
+  ============================================================
+  PASTE YOUR BOTPRESS WEBCHAT EMBED CODE BELOW THIS LINE.
+  In Botpress: open your bot, go to Webchat, then Deploy (or Share),
+  copy the two <script> tags it gives you, and paste them here
+  just above </body>.
+  ============================================================
+-->
+
+</body>
+</html>
